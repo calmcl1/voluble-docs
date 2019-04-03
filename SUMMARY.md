@@ -1,6 +1,8 @@
 # Table of contents
 
-* [Initial page](README.md)
+* [Voluble](README.md)
+* [How Voluble Works](how-voluble-works.md)
+* [REST API](rest-api.md)
 
 ## Plugins
 
@@ -11,6 +13,13 @@
 ## Voluble Common Elements
 
 * [Introduction](voluble-common-elements/introduction.md)
-* [Message](voluble-common-elements/message.md)
-* [Contact](voluble-common-elements/contact.md)
+* [Main Objects](voluble-common-elements/main-objects/README.md)
+  * [Contact](voluble-common-elements/main-objects/contact.md)
+  * [Message](voluble-common-elements/main-objects/message.md)
+  * [Organization](voluble-common-elements/main-objects/organization.md)
+  * [Service](voluble-common-elements/main-objects/service.md)
+  * [Servicechain](voluble-common-elements/main-objects/servicechain.md)
+  * [ServicesInSC](voluble-common-elements/main-objects/servicesinsc.md)
+  * [User](voluble-common-elements/main-objects/user.md)
+  * [Blast](voluble-common-elements/main-objects/blast.md)
 
