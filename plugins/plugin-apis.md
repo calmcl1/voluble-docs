@@ -1,3 +1,9 @@
+---
+description: >-
+  This page explains what a Voluble plugin is required to do, and the methods it
+  must override.
+---
+
 # Plugin APIs
 
 {% hint style="info" %}
@@ -83,6 +89,8 @@ For more info about the types of the `message` and `contact` parameters, see the
 ### `handle_incoming_message`
 
 Voluble exposes a REST API endpoint for every plugin, so that platforms can use this to provide push notifications, usually for notifications of inbound messages. Whenever this occurs, Voluble will call the `handle_incoming_message` method of the relevant plugin and pass on any data that has been transferred to Voluble, so that the plugin can interpret it.
+
+For more detail on how this method is used, see the documentation on [receiving messages](receiving-messages.md).
 
 #### Parameters
 
