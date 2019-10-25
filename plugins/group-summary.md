@@ -2,7 +2,7 @@
 
 ## What's A Plugin?
 
-A plugin in CrewText exists to interface between the Voluble Core and a third-party message provider, such as Esendex or Telegram - these are the platforms that actually handle message delivery. This way, in order to be able to send messages for new platforms, all we have to do is write a plugin that interfaces with that platform.
+A plugin in CrewText exists to interface between Voluble engine and a third-party message provider `Service`, such as Esendex or Telegram - these are the platforms that actually handle message delivery. This way, in order to be able to send messages for new platforms, all we have to do is write a plugin that interfaces with that platform.
 
 Bear in mind, that the plugins are not running all of the time like separate processes - they are only instantiated when a message needs to be sent. For more information on how to handle inbound messages from users via the platform that your plugin interfaces with, see [Receiving Messages](receiving-messages.md).
 
@@ -18,5 +18,9 @@ So, our **PidgeonChat** plugin would be found at `<voluble_root>/plugins/pidgeon
 
 All plugins **must** inherit from the `plugin_base` abstract class provided by Voluble. This can be found in the `/plugins` folder. The constructor call requires two parameters: `plugin_name` and `plugin_description`. These are the user-friendly name and short description of what the plugin does.
 
-Beyond that, the methods that a plugin needs to expose are detailed in [Plugin APIs](plugin-apis.md).
+All plugins **must** override the `send_message()` and `handle_incoming_message()`, and the module must return a function, which when called with no arguments, must return an instance of the plugin.
+
+{% hint style="info" %}
+For more information on the technical implementation of a plugin, check out the [Plugin APIs](plugin-apis.md) page.
+{% endhint %}
 

@@ -2,7 +2,9 @@
 
 * [Voluble](README.md)
 * [How Voluble Works](how-voluble-works.md)
-* [REST API](https://app.swaggerhub.com/apis/voluble/voluble-api/1.0)
+* [Using the API](using-the-api/README.md)
+  * [REST API](https://app.swaggerhub.com/apis-docs/voluble/voluble-api/1.0)
+  * [Setting Up A New User](using-the-api/starting-a-new-organization.md)
 
 ## Plugins
 
