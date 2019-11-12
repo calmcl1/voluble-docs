@@ -4,7 +4,9 @@
 * [How Voluble Works](how-voluble-works.md)
 * [Using the API](using-the-api/README.md)
   * [REST API](https://app.swaggerhub.com/apis-docs/voluble/voluble-api/1.0)
-  * [Setting Up A New User](using-the-api/starting-a-new-organization.md)
+  * [Setting Up A New User](using-the-api/setting-up-new-user.md)
+  * [Servicechains and Contacts](using-the-api/servicechains-and-contacts.md)
+  * [Sending a Message](using-the-api/sending-a-message.md)
 
 ## Plugins
 

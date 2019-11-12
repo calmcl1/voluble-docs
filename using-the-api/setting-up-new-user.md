@@ -66,6 +66,8 @@ The E164-compliant phone number that Voluble will use to send Messages on the Or
 The Organization has successfully been created.
 {% endapi-method-response-example-description %}
 
+{% tabs %}
+{% tab title="" %}
 ```javascript
 {
   "status": "success",
@@ -77,6 +79,8 @@ The Organization has successfully been created.
   }
 }
 ```
+{% endtab %}
+{% endtabs %}
 {% endapi-method-response-example %}
 
 {% api-method-response-example httpCode=400 %}
@@ -84,6 +88,8 @@ The Organization has successfully been created.
 The supplied parameters \(either phone\_number or name\) are invalid.
 {% endapi-method-response-example-description %}
 
+{% tabs %}
+{% tab title="" %}
 ```javascript
 {
     "status": "fail"
@@ -92,6 +98,8 @@ The supplied parameters \(either phone\_number or name\) are invalid.
     }
 }
 ```
+{% endtab %}
+{% endtabs %}
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
@@ -107,4 +115,8 @@ $ curl -X POST \
 ```
 
 If all has gone well, the User should now be part of a new Organization!
+
+### Joining an Existing Organization
+
+
 

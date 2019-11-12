@@ -20,8 +20,8 @@ A Contact has the following attributes:
 | `createdAt` | `Date` | The date that the Contact was created. **Optional, should not be manually created** |
 | `updatedAt` | `Date` | The date that the Contact was last updated. **Optional, should not be manually created** |
 
-{% code-tabs %}
-{% code-tabs-item title="index.ts" %}
+{% tabs %}
+{% tab title="index.ts" %}
 ```typescript
 interface Contact {
     first_name: string,
@@ -35,6 +35,6 @@ interface Contact {
     updatedAt?: Date
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
