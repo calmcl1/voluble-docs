@@ -63,3 +63,27 @@ The message has successfully been sent.
 {% endapi-method-spec %}
 {% endapi-method %}
 
+### Templating
+
+If you're sending a `Message` to several people \(or as part of a `Blast`\), then you might want to be able to personalize the `Message` without having to send many individual `Messages`.
+
+Voluble allows for field templating for some basic characteristics of the Contact, such as title, and first and last names. These can be inserted into a message by simply using the `<variable_name>`syntax, such as:
+
+```text
+{
+    ...
+    "message": "Hi <first_name>, we're looking forward to seeing you on Friday!",
+    ...
+}
+```
+
+The currently supported fields are:
+
+| Variable | Expands to |
+| :--- | :--- |
+| `first_name` | The `Contact`'s first name |
+| `surname` | The `Contact`'s surname |
+| `title` | The `Contact`'s title |
+
+More templating is planned.
+
