@@ -172,10 +172,6 @@ The access token representing the User, supplied as a Bearer token
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
-{% api-method-parameter name="title" type="string" required=true %}
-The title \(e.g. Mr, Mrs, etc\) of the Contact
-{% endapi-method-parameter %}
-
 {% api-method-parameter name="Servicechain\_ID" type="string" required=true %}
 The ID of the default Servicechain that Voluble will use to send a Message to this Contact
 {% endapi-method-parameter %}

@@ -21,7 +21,8 @@ The `super()` call expects two parameters:
 | `plugin_name` | `string` | The user-friendly name of the plugin. **Required** |
 | `plugin_description` | `string` | A short description of what the plugin does. |
 
-{% code title="plugin.ts" %}
+{% tabs %}
+{% tab title="plugin.ts" %}
 ```typescript
 import * as plugin_base from '../plugin_base'
 class ExamplePlugin extends plugin_base.voluble_plugin{
@@ -32,7 +33,8 @@ class ExamplePlugin extends plugin_base.voluble_plugin{
 
 module.exports = ()=>{ return new ExamplePlugin() }
 ```
-{% endcode %}
+{% endtab %}
+{% endtabs %}
 
 ## Methods
 
@@ -68,7 +70,8 @@ In order to send a message, the plugin class must expose the method `send_messag
       </td>
     </tr>
   </tbody>
-</table>{% code title="plugin.ts" %}
+</table>{% tabs %}
+{% tab title="plugin.ts" %}
 ```typescript
 send_message(message: plugin_base.messageInstance, contact: plugin_base.contactInstance): boolean | Promise<boolean> {
     // Do something here that sends messages
@@ -76,7 +79,8 @@ send_message(message: plugin_base.messageInstance, contact: plugin_base.contactI
     // The boolean represents whether or not a message has successfully been sent - true if it has, or false if there was an error.
 }
 ```
-{% endcode %}
+{% endtab %}
+{% endtabs %}
 
 {% hint style="info" %}
 For more info about the types of the `message` and `contact` parameters, see the [Common Elements](../voluble-common-elements/introduction.md).
@@ -100,7 +104,8 @@ For more detail on how this method is used, see the documentation on [receiving 
 | :--- | :--- |
 | `Promise<InterpretedIncomingMessage> | InterpretedIncomingMessage | null` | If the notification from the platform represents an inbound message, it is the plugin's responsibility to parse the data and attempt to identify the message's author and the message content. Otherwise \(for example, if the notification was simply a service message,\) return `null`. |
 
-{% code title="plugin.ts" %}
+{% tabs %}
+{% tab title="plugin.ts" %}
 ```typescript
 handle_incoming_message(message_data: any): Promise<InterpretedIncomingMessage> | InterpretedIncomingMessage | null{
     // This is called when a platform contacts the API endpoint that Voluble exposes for the plugin.
@@ -109,7 +114,8 @@ handle_incoming_message(message_data: any): Promise<InterpretedIncomingMessage> 
     // This should either return null, or an InterpretedIncomingMessage (or a Promise representing one)
 }
 ```
-{% endcode %}
+{% endtab %}
+{% endtabs %}
 
 {% hint style="info" %}
 For more info about the `InterpretedIncomingMessage` type, check out the [documentation](plugin-apis.md#interpretedincomingmessage).
@@ -135,7 +141,8 @@ An `InterpretedIncomingMessage` should contain either`contact_id` or at least on
 | `phone_number` | `string` | The E164-formatted phone number of the message author, if available. **Optional, unless `contact_id` is not specified.** |
 | `email_address` | `string` | The valid email address of the message author, if available. **Optional, unless `contact_id` is not specified.** |
 
-{% code title="plugin\_base.ts" %}
+{% tabs %}
+{% tab title="plugin\_base.ts" %}
 ```typescript
 interface InterpretedIncomingMessage {
     message_body: string,
@@ -145,5 +152,6 @@ interface InterpretedIncomingMessage {
     email_address?: string
 }
 ```
-{% endcode %}
+{% endtab %}
+{% endtabs %}
 
