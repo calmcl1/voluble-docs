@@ -4,8 +4,6 @@
 
 We don't hold any personally-identifiable information \(PII\) directly, as we believe that this sort of sensitive data handling is best left to the experts. As such, any PII that we need in order to run the service is encrypted before it leaves our system and stored with our identity provider, Auth0. Consequently, no PII is ever stored or transmitted insecurely once it is initially supplied to Voluble. This includes names, contact details, and other details that might be used to identify you in the event of a breach.
 
-
-
 ### Users
 
 #### Consent
