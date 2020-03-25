@@ -1,7 +1,14 @@
 # Table of contents
 
 * [Voluble](README.md)
-* [How Voluble Works](how-voluble-works.md)
+* [How Voluble Works](how-voluble-works/README.md)
+  * [Organizations](how-voluble-works/organizations/README.md)
+    * [Charges and Billing](how-voluble-works/organizations/charges-and-billing.md)
+  * [Contacts](how-voluble-works/contacts.md)
+  * [Messages](how-voluble-works/messages.md)
+  * [Services and Servicechains](how-voluble-works/services-and-servicechains.md)
+  * [Users](how-voluble-works/users.md)
+* [Data Collection and Privacy](data-collection-and-privacy.md)
 * [Using the API](using-the-api/README.md)
   * [REST API](https://app.swaggerhub.com/apis-docs/voluble/voluble-api/1.0)
   * [Setting Up A New User](using-the-api/setting-up-new-user.md)
@@ -10,14 +17,14 @@
 
 ## Plugins
 
-* [Plugins Introduction](plugins/group-summary.md)
+* [Plugins Introduction](plugins/plugins-intro.md)
 * [Plugin APIs](plugins/plugin-apis.md)
 * [Receiving Messages](plugins/receiving-messages.md)
 
 ## Voluble Common Elements
 
 * [Introduction](voluble-common-elements/introduction.md)
-* [Main Objects](voluble-common-elements/main-objects/README.md)
+* [Main Object Tech Overview](voluble-common-elements/main-objects/README.md)
   * [Contact](voluble-common-elements/main-objects/contact.md)
   * [Message](voluble-common-elements/main-objects/message.md)
   * [Organization](voluble-common-elements/main-objects/organization.md)

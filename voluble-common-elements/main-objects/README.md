@@ -1,4 +1,4 @@
-# Main Objects
+# Main Object Tech Overview
 
 Voluble uses these objects to represent the fundamental concepts that it deals with.
 
