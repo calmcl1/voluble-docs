@@ -44,9 +44,16 @@ Auth0 stores all of the information we provide securely. Read more on [Auth0's s
 | Information | Voluble DB | Auth0 |
 | :--- | :--- | :--- |
 | Auth0 User ID | ✔️ | ✔️ |
-| Name | ✔️ | ✔️ |
-| Email Address | ✔️ | ✔️ |
-| Social media usernames | ✔️ | ✔️ |
+| User name | ❌ | ✔️ |
+| User email address | ❌ | ✔️ |
+| User phone number | ❌ | ✔️ |
+| User social media details | ❌ | ✔️ |
 | User privileges | ❌ | ✔️ |
 | User organization ID | ✔️ | ❌ |
+| Contact name | ✔️ | ❌ |
+| Contact email address | ✔️ | ❌ |
+| Contact phone number | ✔️ | ❌ |
+| Contact social media details | ✔️ | ❌ |
+| Credits balance | ✔️ | ❌ |
+| Financial/credit card details | ❌ | ❌ |
 
