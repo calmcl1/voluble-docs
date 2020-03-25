@@ -1,4 +1,10 @@
-# Charges and Billing
+---
+description: >-
+  Voluble uses a 'credits' system to keep track of how many Messages you can
+  send.
+---
+
+# Credits and Billing
 
 ## Plan Charges
 
@@ -16,9 +22,9 @@ Credits can be purchased in two ways - either via our '**Light**' or '**Full**' 
 
 #### Light Credit Purchasing
 
-This is effectively a 'pay-as-you-go' method of purchasing credits.
+This is effectively a 'pay-as-you-go' method of purchasing credits. This means that at the end of each billing period, you will receive a bill for the amount of `Messages` that you have sent.
 
 #### Full Credit Purchasing
 
-This is a 'pay-in-advance' method.
+This is a 'pay-in-advance' method. This means that you pay for a set amount of credits, which are used up as you send `Messages` in the future.
 

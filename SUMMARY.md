@@ -3,7 +3,7 @@
 * [Voluble](README.md)
 * [How Voluble Works](how-voluble-works/README.md)
   * [Organizations](how-voluble-works/organizations/README.md)
-    * [Charges and Billing](how-voluble-works/organizations/charges-and-billing.md)
+    * [Credits and Billing](how-voluble-works/organizations/charges-and-billing.md)
   * [Contacts](how-voluble-works/contacts.md)
   * [Messages](how-voluble-works/messages.md)
   * [Services and Servicechains](how-voluble-works/services-and-servicechains.md)

@@ -57,3 +57,9 @@ The scopes in a JWT control the routes and methods that are available on a User-
 | servicechain:delete | Allows the User to remove existing `Servicechains` from the `Organization`. |
 | servicechain:edit | Allows the User to modify existing `Servicechains` in the `Organization`. |
 
+#### Credit and Billing Scopes
+
+| Scope Name | Privilege |
+| :--- | :--- |
+| credits:update | Allows the User to modify the amount of `credits` that the `Organization` has. Should be controlled with a billing system on the implementation end. |
+
